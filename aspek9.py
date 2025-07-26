@@ -205,7 +205,7 @@ def main():
             with st.spinner("Sedang memproses..."):
                 aspek = predict_model_aspek(model_aspek, user_input)
                 if aspek == 0:
-                    st.warning("Teks tidak terdeteksi sebagai ulasan aspek konten web.")
+                    st.warning("Teks tidak terdeteksi sebagai ulasan aspek kebermanfaatan.")
                 else:
                     sentimen = predict_model_sentimen(model_sentimen, user_input)
                     if sentimen == 0:
